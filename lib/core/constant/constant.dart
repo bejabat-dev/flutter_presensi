@@ -1,4 +1,4 @@
-const String BASE_URL = 'http://127.0.0.1:8000/';
+const String BASE_URL = 'http://192.168.1.6:8000/';
 
 const String PREF_AUTH = 'pref-auth';
 const String PREF_ID = 'pref_id';

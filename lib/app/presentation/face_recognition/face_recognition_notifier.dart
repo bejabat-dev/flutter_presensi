@@ -23,6 +23,7 @@ class FaceRecognitionNotifier extends AppProvider {
 
   @override
   void init() async {
+    
     await _faceSDK.initialize(config: null);
     await _getBasePhoto();
     if (errorMessage.isEmpty) getCurrentPhoto();

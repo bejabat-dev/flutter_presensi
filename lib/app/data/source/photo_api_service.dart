@@ -11,7 +11,7 @@ abstract class PhotoApiService {
     return _PhotoApiService(dio);
   }
 
-  @GET('/api/get-photo')
+  @GET('/api/get-image')
   Future<HttpResponse<DataState>> get();
 
   @GET('{path}')

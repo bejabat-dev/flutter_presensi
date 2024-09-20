@@ -14,7 +14,7 @@ class _PhotoApiService implements PhotoApiService {
     this.baseUrl,
     this.errorLogger,
   }) {
-    baseUrl ??= 'http://127.0.0.1:8000/';
+    baseUrl ??= 'http://192.168.1.6:8000/';
   }
 
   final Dio _dio;
@@ -36,7 +36,7 @@ class _PhotoApiService implements PhotoApiService {
     )
         .compose(
           _dio.options,
-          '/api/get-photo',
+          '/api/get-image',
           queryParameters: queryParameters,
           data: _data,
         )
